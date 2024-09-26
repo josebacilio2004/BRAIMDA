@@ -1,0 +1,256 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.logo-text h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.logo-text p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.hero {
+    background-color: #e0f7fa;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #00796b;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    padding: 0.7rem 1.5rem;
+    background-color: #00796b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #004d40;
+}
+
+.about, .proposal, .benefits, .contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.image-block {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.image-block img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.image-block img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.proposal .content, .benefits ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.proposal .box, .benefits li {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.proposal .box h3, .benefits li strong {
+    margin-bottom: 1rem;
+    color: #00796b;
+}
+
+.contact form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact .btn {
+    background-color: #00796b;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact .btn:hover {
+    background-color: #004d40;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+/* Estilos para la sección del mapa mental */
+.mind-map {
+    padding: 2rem;
+    text-align: center;
+    background-color: #e0f7fa;
+}
+
+.mind-map h2 {
+    font-size: 2.2rem;
+    color: #00796b;
+}
+
+.mind-map p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.mind-map .image-block {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.mind-map .image-block img {
+    width: 100%;
+    max-width: 600px;  /* Ajusta el tamaño de la imagen del mapa mental */
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mind-map .image-block img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Opción para el iframe interactivo (puedes usarlo si insertas un iframe en lugar de la imagen) */
+.iframe-block iframe {
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Sección "Sobre Nosotros" */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 60%;
+    padding-right: 20px;
+}
+
+.about-indicators {
+    flex: 1;
+    max-width: 35%;
+    background-color: #f4f4f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.indicator {
+    margin-bottom: 1.5rem;
+}
+
+.indicator h3 {
+    font-size: 1.3rem;
+    color: #00796b;
+}
+
+.indicator p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-text, .about-indicators {
+        max-width: 100%;
+    }
+}
