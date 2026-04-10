@@ -128,9 +128,7 @@
                 <span class="section-number">Nr. 04</span>
                 <h2 class="section-title reveal">Visualización 3D</h2>
                 <p class="section-description reveal">Explora nuestro prototipo interactivo de señalización inclusiva.</p>
-                <div class="visualizer-container reveal">
-                    <iframe src="http://localhost:5006/braimda_app" style="width: 100%; height: 100%; border: none;"></iframe>
-                </div>
+                <div id="three-container" class="visualizer-container reveal" style="background: transparent; min-height: 500px;"></div>
             </div>
         </section>
 
@@ -168,6 +166,8 @@
         </div>
     </footer>
 
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
