@@ -3,152 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRAIMDA - Inclusión para Todos</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>BRAIMDA | Inclusión Social & Accesibilidad</title>
+    <meta name="description" content="Braimda es un proyecto dedicado a mejorar la inclusión social de personas con discapacidad visual a través de señalización innovadora y guías táctiles.">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-sans bg-gray-100">
-    <header class="bg-blue-900 text-white fixed w-full top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="assets/Logo/braimda1.png" alt="Logo de Braimda" class="h-10 mr-3">
-                <div>
-                    <h1 class="text-xl font-bold">BRAIMDA</h1>
-                    <p class="text-sm">Inclusión para Todos</p>
-                </div>
-            </div>
+<body>
+
+    <header id="main-header">
+        <div class="container nav-container">
             <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#inicio" class="hover:underline">Inicio</a></li>
-                    <li><a href="#sobre-nosotros" class="hover:underline">Sobre Nosotros</a></li>
-                    <li><a href="#propuesta" class="hover:underline">Propuesta</a></li>
-                    <li><a href="#beneficios" class="hover:underline">Beneficios</a></li>
-                    <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+                <a href="#" class="logo">
+                    <img src="assets/Logo/braimda1.png" alt="Braimda Logo">
+                    <span>BRAIMDA</span>
+                </a>
+                <ul>
+                    <li><a href="#solucion">Solución</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#prototipo">Prototipo 3D</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="inicio" class="bg-blue-100 text-blue-900 py-20 mt-16">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-4xl font-bold mb-4">PROMOVIENDO LA INCLUSIÓN SOCIAL</h2>
-                <p class="text-xl mb-8">Braimda es un proyecto dedicado a mejorar la vida de las personas con discapacidad mental y visual.</p>
-                <h3 class="text-2xl font-semibold mb-4">ODS relacionado a Braimda</h3>
-                <p class="mb-4">Nuestro proyecto se alinea con el Objetivo de Desarrollo Sostenible 10: Reducción de las desigualdades.</p>
-                <p class="mb-8">Al promover la accesibilidad, buscamos garantizar que todas las personas, independientemente de su capacidad, tengan acceso a los mismos derechos y oportunidades.</p>
-                <img src="assets/images/10ods.jpg" alt="Mapa Mental de Braimda" class="mx-auto mb-8 rounded-lg shadow-lg max-w-full h-auto">
-                <a href="#sobre-nosotros" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">Conócenos</a>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="assets/video/Video_Profesional_Sobre_Discapacidad_Visual.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content reveal">
+                <h1>HACIA UN MUNDO<br>SIN BARRERAS</h1>
+                <p>Redefiniendo la autonomía y la inclusión social para personas con discapacidad visual a través del diseño arquitectónico accesible.</p>
+                <a href="#solucion" class="btn">Explorar Propuesta</a>
             </div>
         </section>
 
-        <section id="sobre-nosotros" class="py-20">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-12">Sobre Nosotros</h2>
-                <div class="flex flex-wrap -mx-4">
-                    <div class="w-full md:w-1/2 px-4 mb-8">
-                        <p class="mb-4">Braimda nace de la necesidad de crear un entorno en el que todos puedan orientarse y moverse de manera autónoma. En nuestra universidad, esta falta de accesibilidad es evidente: no existen guías táctiles, señalización en braille ni recursos adaptados.</p>
-                        <p>Braimda es nuestra propuesta para transformar los espacios en lugares inclusivos y accesibles para todos.</p>
-                        <img src="assets/images/persona_dv.jpg" alt="Personas con discapacidad visual en un espacio público" class="mt-8 rounded-lg shadow-lg max-w-full h-auto">
-                    </div>
-                    <div class="w-full md:w-1/2 px-4">
-                        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
-                            <h3 class="text-xl font-semibold mb-4">A nivel global</h3>
-                            <p>Aproximadamente 39 millones de personas en el mundo son ciegas, y más de 285 millones tienen alguna forma de discapacidad visual, según la OMS.</p>
+        <!-- The Reality Section -->
+        <section id="realidad">
+            <div class="container">
+                <span class="section-number">Nr. 01</span>
+                <div class="grid-2">
+                    <div class="reveal">
+                        <h2 class="section-title">La Brecha de la Accesibilidad</h2>
+                        <p class="section-description">Cerca de 1 millón de personas en Perú enfrentan desafíos diarios de movilidad debido a la falta de infraestructura adecuada. En Braimda, transformamos espacios públicos en entornos intuitivos y seguros.</p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <h4>39M</h4>
+                                <p>Personas con ceguera a nivel global</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>20%</h4>
+                                <p>De espacios públicos accesibles en Perú</p>
+                            </div>
                         </div>
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <h3 class="text-xl font-semibold mb-4">A nivel local (Perú)</h3>
-                            <p>El Instituto Nacional de Estadística e Informática (INEI) estima que más de 1 millón de personas en Perú tienen discapacidad visual. Solo el 20% de los espacios públicos en Perú son accesibles, según estudios recientes.</p>
-                        </div>
+                    </div>
+                    <div class="image-wrapper reveal">
+                        <img src="assets/images/persona_dv.jpg" alt="Persona con discapacidad visual navegando la ciudad">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="propuesta" class="py-20 bg-gray-100">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-12">Nuestra Propuesta</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Carteles en Braille</h3>
-                        <p class="mb-4">Los carteles en braille permiten a las personas con discapacidad visual moverse sin depender de terceros, facilitando su orientación en espacios públicos.</p>
-                        <img src="assets/images/carterl_b.jpg" alt="Carteles en braille en espacios públicos" class="w-full rounded-lg">
+        <!-- Solution Section (Signage & Tiles) -->
+        <section id="solucion" class="bg-grey">
+            <div class="container">
+                <span class="section-number">Nr. 02</span>
+                <h2 class="section-title reveal">Nuestra Solución</h2>
+                <p class="section-description reveal" style="max-width: 600px;">Implementamos un sistema de señalización dual que combina información háptica y visual para garantizar una navegación autónoma y digna.</p>
+                
+                <div class="grid-2" style="margin-top: 4rem;">
+                    <div class="image-wrapper reveal">
+                        <img src="assets/images/mockup_cartel_minimalista.png" alt="Mockup de Cartelería Braille Minimalista">
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Pavimentos en Braille</h3>
-                        <p class="mb-4">Los pavimentos en braille permiten a las personas con discapacidad visual moverse y guiarse sin depender de terceros, facilitando su orientación en espacios públicos.</p>
-                        <img src="assets/images/p.webp" alt="Pavimentos en braille en espacios públicos" class="w-full rounded-lg">
+                    <div class="reveal">
+                        <h3>Cartelería en Braille</h3>
+                        <p class="section-description">Diseñamos paneles informativos que integran tipografía de alto contraste y braille normalizado, permitiendo la identificación de espacios de forma independiente.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Guías Táctiles</h3>
-                        <p class="mb-4">Las guías táctiles en el suelo son una solución que mejora el desplazamiento seguro y autónomo de personas con discapacidades visuales y mentales.</p>
-                        <img src="assets/images/guia.jpg" alt="Guías táctiles en el suelo" class="w-full rounded-lg">
+                </div>
+
+                <div class="grid-2" style="margin-top: 8rem;">
+                    <div class="reveal">
+                        <h3>Pavimentos Táctiles</h3>
+                        <p class="section-description">Lozetas con texturas normalizadas que guían y advierten sobre cambios de nivel o cruces, integrándose armónicamente en el diseño urbano moderno.</p>
+                    </div>
+                    <div class="image-wrapper reveal">
+                        <img src="assets/images/mockup_lozetas_modernas.png" alt="Mockup de Pavimento Táctil Moderno">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="beneficios" class="py-20">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-12">IMPACTO BRAIMDA</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span><strong>Autonomía:</strong> Mayor independencia para las personas con discapacidades.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span><strong>Seguridad:</strong> Espacios públicos más seguros y adaptados.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span><strong>Empatía:</strong> Fomenta una mayor comprensión y respeto por la diversidad.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span><strong>Turismo accesible:</strong> Mejoras para los turistas con discapacidades.</span>
-                            </li>
-                        </ul>
+        <!-- Impact Section -->
+        <section id="impacto">
+            <div class="container">
+                <span class="section-number">Nr. 03</span>
+                <h2 class="section-title reveal text-center">Impacto Braimda</h2>
+                <div class="cards-grid">
+                    <div class="card reveal">
+                        <span class="card-num">01</span>
+                        <h3>Autonomía</h3>
+                        <p>Fomentamos la independencia en el desplazamiento diario, reduciendo la dependencia de terceros.</p>
                     </div>
-                    <div>
-                        <img src="assets/images/inclusion.jpg" alt="Inclusión" class="w-full rounded-lg shadow-lg">
+                    <div class="card reveal">
+                        <span class="card-num">02</span>
+                        <h3>Seguridad</h3>
+                        <p>Reducción de riesgos en espacios públicos mediante guías físicas táctiles y visuales.</p>
+                    </div>
+                    <div class="card reveal">
+                        <span class="card-num">03</span>
+                        <h3>Empatía</h3>
+                        <p>Concientizamos a la sociedad sobre la importancia del diseño universal y la inclusión efectiva.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="grafico-3d" class="py-20 bg-gray-100">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-8">Visualización 3D de Nuestro Proyecto</h2>
-                <p class="text-center mb-8">Explora nuestro proyecto Braimda en un entorno tridimensional interactivo.</p>
-                <div id="grafico-3d-container" style="width: 100%; height: 500px; background-color: #f0f0f0;"></div>
+        <!-- 3D Prototyping Section -->
+        <section id="prototipo" class="bg-grey">
+            <div class="container text-center">
+                <span class="section-number">Nr. 04</span>
+                <h2 class="section-title reveal">Visualización 3D</h2>
+                <p class="section-description reveal">Explora nuestro prototipo interactivo de señalización inclusiva.</p>
+                <div class="visualizer-container reveal">
+                    <!-- Note: The previous iframe source was http://localhost:5006/braimda_app. 
+                         In a real deployment this should be updated to the production URL. -->
+                    <iframe src="https://braimda-app.vercel.app/" style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
             </div>
         </section>
 
-        <section id="contacto" class="py-20">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-8">Contacto</h2>
-                <p class="text-center mb-8">Si deseas conocer más sobre nuestro proyecto o colaborar con nosotros, ¡no dudes en contactarnos!</p>
-                <div class="flex flex-wrap -mx-4">
-                    <div class="w-full md:w-1/2 px-4 mb-8">
-                        <img src="assets/images/braimda_g.jpeg" alt="Equipo de Braimda trabajando en el proyecto" class="w-full rounded-lg shadow-lg">
+        <!-- Contact Section -->
+        <section id="contacto">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="reveal">
+                        <h2 class="section-title">Únete al Cambio</h2>
+                        <p class="section-description">¿Tienes un proyecto de infraestructura o quieres colaborar con nosotros? Estamos listos para asesorarte.</p>
+                        <p><strong>Email:</strong> contacto@braimda.org</p>
                     </div>
-                    <div class="w-full md:w-1/2 px-4">
-                        <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow-md">
-                            <div class="mb-4">
-                                <label for="name" class="block text-gray-700 font-bold mb-2">Nombre</label>
-                                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg" required>
+                    <div class="reveal">
+                        <form id="contact-form">
+                            <div style="margin-bottom: 1.5rem;">
+                                <input type="text" placeholder="Nombre" style="width: 100%; padding: 1rem; border: 1px solid #ddd; font-family: inherit;">
                             </div>
-                            <div class="mb-4">
-                                <label for="email" class="block text-gray-700 font-bold mb-2">Correo Electrónico</label>
-                                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg" required>
+                            <div style="margin-bottom: 1.5rem;">
+                                <input type="email" placeholder="Email" style="width: 100%; padding: 1rem; border: 1px solid #ddd; font-family: inherit;">
                             </div>
-                            <div class="mb-4">
-                                <label for="message" class="block text-gray-700 font-bold mb-2">Mensaje</label>
-                                <textarea id="message" name="message" rows="5" class="w-full px-3 py-2 border rounded-lg" required></textarea>
+                            <div style="margin-bottom: 2rem;">
+                                <textarea placeholder="Mensaje" rows="5" style="width: 100%; padding: 1rem; border: 1px solid #ddd; font-family: inherit;"></textarea>
                             </div>
-                            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300">Enviar Mensaje</button>
+                            <button type="submit" class="btn" style="background: var(--dark-bg); width: 100%; cursor: pointer;">Enviar Mensaje</button>
                         </form>
                     </div>
                 </div>
@@ -156,37 +161,12 @@
         </section>
     </main>
 
-    <footer class="bg-blue-900 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2024 BRAIMDA - Todos los derechos reservados</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BRAIMDA. DISEÑANDO PARA TODOS.</p>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script>
-        // Código para la visualización 3D (similar al proporcionado anteriormente)
-        // Este es un ejemplo básico, deberías personalizarlo según tus necesidades
-        const container = document.getElementById('grafico-3d-container');
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(container.clientWidth, container.clientHeight);
-        container.appendChild(renderer.domElement);
-
-        const geometry = new THREE.BoxGeometry();
-        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-        const cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
-
-        camera.position.z = 5;
-
-        function animate() {
-            requestAnimationFrame(animate);
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
-            renderer.render(scene, camera);
-        }
-        animate();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

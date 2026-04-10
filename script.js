@@ -1,48 +1,60 @@
-// Configuración básica de Three.js
-let scene, camera, renderer;
-let cube;
+// BRAIMDA - Interactivity Script
 
-function init() {
-    // Crear la escena
-    scene = new THREE.Scene();
-    
-    // Configurar la cámara
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.z = 5;
-    
-    // Configurar el renderizador
-    renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.getElementById('grafico-3d-container').appendChild(renderer.domElement);
-    
-    // Crear un cubo (como ejemplo)
-    const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
-    
-    // Iniciar la animación
-    animate();
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.getElementById('main-header');
+    const reveals = document.querySelectorAll('.reveal');
 
-function animate() {
-    requestAnimationFrame(animate);
-    
-    // Rotar el cubo
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
-    
-    renderer.render(scene, camera);
-}
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
 
-// Manejar el cambio de tamaño de la ventana
-function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-}
+    // Reveal Animations on Scroll
+    const observerOptions = {
+        threshold: 0.15
+    };
 
-window.addEventListener('resize', onWindowResize, false);
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
 
-// Iniciar la visualización 3D cuando se cargue la página
-window.onload = init;
+    reveals.forEach(reveal => {
+        observer.observe(reveal);
+    });
+
+    // Smooth Scroll for local links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Form submission handling (Mockup)
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('¡Gracias por contactarnos! Tu mensaje ha sido enviado exitosamente.');
+            contactForm.reset();
+        });
+    }
+
+    // Initial check for non-scroll reveals
+    setTimeout(() => {
+        window.dispatchEvent(new Event('scroll'));
+    }, 100);
+});
